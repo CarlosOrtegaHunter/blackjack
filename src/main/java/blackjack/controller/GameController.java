@@ -27,10 +27,7 @@ public class GameController {
         return gameService.createGame(playerName)
                 .map(mapDTO::toGameDTO)
                 .map(gameDTO -> ResponseEntity.status(HttpStatus.CREATED).body(gameDTO))
-                .onErrorResume(error -> {
-                    String errorMessage = error.getMessage() != null ? error.getMessage() : "Failed to create game";
-                    return Mono.just(ResponseEntity.badRequest().body(null));
-                });
+                .onErrorResume(error -> Mono.just(ResponseEntity.badRequest().build()));
     }
 
     @GetMapping("/{gameId}")

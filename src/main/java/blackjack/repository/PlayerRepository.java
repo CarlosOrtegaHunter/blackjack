@@ -1,6 +1,5 @@
 package blackjack.repository;
 
-import blackjack.model.Game;
 import blackjack.model.Player;
 import org.springframework.data.r2dbc.repository.Query;
 import org.springframework.data.r2dbc.repository.R2dbcRepository;
