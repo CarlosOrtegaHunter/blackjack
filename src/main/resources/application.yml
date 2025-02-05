@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      uri: ${MONGO_DB_URI:mongodb://localhost:27017/blackjack}
+      database: blackjack
+
+  r2dbc:
+    url: ${MYSQL_R2DBC_URL:r2dbc:mysql://localhost:3306/blackjack}
+    username: ${MYSQL_USERNAME:root}
+    password: ${MYSQL_PASSWORD:password}
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    org.springframework.r2dbc: DEBUG
+    org.springframework.data.mongodb: DEBUG
