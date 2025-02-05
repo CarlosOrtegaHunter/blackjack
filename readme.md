@@ -6,7 +6,7 @@ The application demonstrates Java Spring skills, including **Reactive Programmin
 
 ## Features
 - **Reactive Game Flow**: Asynchronous handling using **Spring WebFlux**.
-- **MongoDB Integration**: Stores game data in **MongoDB** using **ReactiveMongoRepository**.
+- **MongoDB Integration**: Stores `Game` data in **MongoDB** using **ReactiveMongoRepository**.
 - **Reactive CRUD Operations**: Implements non-blocking repositories with **R2DBC** for `Player` data.
 - **REST API**: Exposes endpoints to create games, make moves, check results, and manage players.
 
