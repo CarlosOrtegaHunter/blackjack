@@ -1,13 +1,13 @@
 # Blackjack Game - Java Reactive RESTful API
 
 ## Overview
-This project is a **Reactive RESTful Blackjack Game API** built using **Spring Boot, WebFlux, and MongoDB**. 
-The application demonstrates Java Spring skills, including **Reactive Programming**, **R2DBC**, **WebFlux Controllers**, and **Asynchronous Data Handling**. 
+This project is a Reactive RESTful Blackjack Game API built using *Spring Boot*, *WebFlux*, and *MongoDB*. 
+The application demonstrates *Java Spring* skills, including reactive programming, *R2DBC*, *WebFlux Controllers*, and asynchronous data handling. 
 
 ## Features
-- **Reactive Game Flow**: Asynchronous handling using **Spring WebFlux**.
-- **MongoDB Integration**: Stores `Game` data in **MongoDB** using **ReactiveMongoRepository**.
-- **Reactive CRUD Operations**: Implements non-blocking repositories with **R2DBC** for `Player` data.
+- **Reactive Game Flow**: Asynchronous handling using *Spring WebFlux*.
+- **MongoDB Integration**: Stores `Game` data in *MongoDB* using `ReactiveMongoRepository`.
+- **Reactive CRUD Operations**: Implements non-blocking repositories with *R2DBC* for `Player` data.
 - **REST API**: Exposes endpoints to create games, make moves, check results, and manage players.
 
 ---
